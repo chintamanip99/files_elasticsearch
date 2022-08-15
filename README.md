@@ -29,5 +29,5 @@ Settingup the backend:
 2) run : pip install -r requirements.txt
 3) run : python manage.py makemigrations
 4) run : python manage.py runserver
-5) run : python manage.py worker (to run the worker thread for indexing the files)
+5) run : python manage.py worker (to run the worker thread for running job containing tasks to index the files)
 6) Hurray! the backend of the app also started.
