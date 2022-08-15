@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch, helpers
-connection = Elasticsearch(['https://filescontentsearch.es.us-east-2.aws.elastic-cloud.com/'],cloud_id="FilesContentSearch:dXMtZWFzdC0yLmF3cy5lbGFzdGljLWNsb3VkLmNvbSQ3MDA4YzBkMzQwZTY0YTMxYTMxNGY4OTdkNmE1OWM3NCQyOGM2NTc3YjZkNjc0MjAzOTllOTRhZmExYjEwN2VkMg==",basic_auth=("elastic", "ThsfoSfxTnrzytmd71FylVzr"),ssl_assert_fingerprint="315F161C7F7D61FD263680005EB4FC0148EAADED")
+connection = Elasticsearch("http://localhost:9200")
 
 def yield_docs():
     gauth = GoogleAuth()
