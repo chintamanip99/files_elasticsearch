@@ -1,0 +1,162 @@
+ International Research Journal of Engineering and Technology (IRJET) e-ISSN: 2395-0056
+ Volume: 09 Issue: 01 | Jan 2022 www.irjet.net p-ISSN: 2395-0072
+© 2022, IRJET | Impact Factor value: 7.529 | ISO 9001:2008 Certified Journal | Page 639
+AI Cum AR Based Smart Home Automation System
+Dr.N.J.R.Muniraj1, R.Pramoth2, S.Abhishek3, J.Anoit Joshua Paul4, J.Hari Krishna5
+1Dean, Dept. of Electronics and Communication Eng, SNS College of Technology, Coimbatore, Tamil Nadu- India.
+4UG Student, Dept. of Electronics and Communication Eng, SNS College of Technology, Coimbatore, Tamil NaduIndia.
+---------------------------------------------------------------------***----------------------------------------------------------------------
+Abstract - According to the World Health Organization (WHO) Survey 27% of the virus (covid-19) spread between people
+through direct and indirect physical contact, to overcome the situations people should reduce use of manual switches in public
+places for controlling electrical appliances like light, fans, etc., In the current technology appliance are controlled by using IR
+remote or mobile phones, while mobile phones work only by an authorized person because of a private network and in case of
+IR remote it can be operated through only physical touches, to overcome the problem, the proposed technique includes of AI
+cum AR based automation system for controlling all electrical equipment. The system equipped with microcontrollers and
+relay along with the power supply unit, the outcome of the product is to reduce the transmission of virus between people
+through physical touches and it additionally help the people with bodily disabilities.
+Key Words: Home Automation; AI; AR; IoT
+1. INTRODUCTION
+Today technological changes make the probability of more complex things made into simple tasks with more accuracy in
+major areas and mostly in Automation Industry. In this paper, we developed an Automation Using AR & AI with the help of
+an IoT the proposed system consists of web camera, Processing unit, Relay, Microcontrollers, Mobile Phone and Target
+image. This aims to reduce virus spread and to assist people, especially the physically challenged people and elderly who
+cannot do their own work and need help from others for doing simple tasks such as controlling the electrical appliances in
+the home. They are dependent on others which causes a lot of inconvenience too many people. With the rise of smart home
+devices and easy use of mobile phones people can easily control the home appliances. But in many cases the GUI
+(Graphical User Interface) of the mobile is difficult to use for the physically challenged people. This system uses
+Augmented Reality (AR) & Artificial intelligence technique for automation which is getting increasingly popular for
+controlling of home appliances.
+Using this technology, it will greatly help the physically challenged and elderly people to control the appliances easily. A
+mobile application along with Vuforia Server will help the users to control a switch by simply pointing their mobile camera
+to it from a distance. Separate virtual switches will appear on and off when the camera is pointed to image target, thus
+allow the user to control different appliances easily and conveniently. Instead of normal switches, 2D buttons will appear
+on the screen which gives a familiar interface to the user. When the user touches the button information will be transfer to
+the Blynk server and instruction is forwarded to the microcontroller and the controller turns the device on or off
+according to the user operation.
+Fig -1: Working Procedure
+Electronic Components
+AI cum AR based
+microcontroller 
+ International Research Journal of Engineering and Technology (IRJET) e-ISSN: 2395-0056
+ Volume: 09 Issue: 01 | Jan 2022 www.irjet.net p-ISSN: 2395-0072
+© 2022, IRJET | Impact Factor value: 7.529 | ISO 9001:2008 Certified Journal | Page 640
+This system also contains AI based gesture capture, so the user can control the appliance by showing their fingers. There
+are three ways to control the appliance first one by Blynk Application and the second one using ARIOT (AR based)
+Application and third one is using AI based gesture control.
+The section II of the paper is the literature survey. Section III is the hardware of the paper section IV of the paper is about
+working and section V is software description. The section VI is about implementation of this paper and section VII is the
+conclusion.
+2. LITERATURE SURVEY
+H. K. Singh, S. Verma, S. Pal and K. Pandey, [1] "A step towards Home Automation using IOT" They develop home
+automation system based on IOT using Wi-Fi based microcontroller.
+H. Durani, M. Sheth, M. Vaghasia and S. Kotech, [2] "Smart Automated Home Application using IoT with Blynk App" The
+author proposed the functionality of node esp8266 are connected with home appliances with help of coding and hosting
+online with web server. All the functionality is handled by Mobile App.
+A. Sugiura, M. Toyoura and X. Mao, [3] "Clickable Virtual Button in Real Space" A new natural click interface for AR
+systems. The acceleration of fingertips provides cues for detecting click gesture and succeeded in use it for recognizing
+natural click gestures with a single camera.
+S. Sureshkumar, C. P. Agash, S. Ramya, R. Kaviyaraj and S. Elanchezhiyan, [4] "Augmented Reality with Internet of Things"
+AR can be integrated with industry (AR-IoT) 4.0 and how the sensors are used to monitoring objects/things contiguously
+round the clock, and make the process of converting real-time physical objects into smart things for the upcoming new era
+with AR-IoT.
+C. Wu and C. H. Lin, [5] "Depth-based hand gesture recognition for home appliance control" hand gesture recognition
+system for home appliance control using only the depth camera.
+Minchev, Dimitar & Dimitrov, Atanas, [6] “Home automation system based on ESP8266” it shows implementation of an
+Internet of Things Home Automation System with energy measurement capabilities, hardware components are the
+ESP8266 micro-controller and energy meter chip HLW8012 by HLW Technology, Software works over the TCP/IP stack
+and uses the MQTT protocol to communicate between the devices.
+3. HARDWARE
+The hardware components and materials that we used in the system are NodeMCU esp8266 Wi-Fi development board,
+Arduino UNO, Relay Unit.
+3.1 NodeMCU
+NodeMCU is based on the Espressif ESP8266-12E Wi-Fi System-On-Chip, loaded with an open-source, Lua-based
+firmware. The NodeMCU is the Wi-Fi enabled microcontroller where it is been widely used in the IoT areas it gets the input
+from the sensor and it will upload to the internet.
+3.2 Arduino UNO
+The boards are equipped with sets of digital and analog input/output pins that may be interfaced to various
+expansion board shields or breadboards for prototyping and other circuits. The boards feature serial communications
+interfaces, including Universal Serial Bus USB on some models, which are also used for loading programs. The
+microcontrollers can be programmed using the C and C++ programming languages, using a standard API which is also
+known as the "Arduino language".
+3.3 Relay Unit
+The four-channel relay module contains four 5V relays and the associated switching and isolating components,
+which makes interfacing with a microcontroller or sensor easy with minimum components and connections. 
+ International Research Journal of Engineering and Technology (IRJET) e-ISSN: 2395-0056
+ Volume: 09 Issue: 01 | Jan 2022 www.irjet.net p-ISSN: 2395-0072
+© 2022, IRJET | Impact Factor value: 7.529 | ISO 9001:2008 Certified Journal | Page 641
+Fig -2: Block diagram of control unit
+4. WORKING
+In this proposed system, we are controlling the appliances using AR & AI with a help of IOT. For the first step the system
+must connect to an AC power supply of 230V to turn on the Controller board, the Router must have the same SSID and
+password as we instructed in the code, once the board is turned on it automatically connect with the router. When the
+connection is established, it will start sending appliance state requests of that particular device Id to the server, User
+touches the virtual button the server responds to the request by fetching the switch state from the Vuforia database. As
+soon as the data is fetched from the Vuforia database, the server sends the data back to ESP8266 in the JSON format. When
+the data is received by the ESP8266, it parses the required information from the response and then triggers the relay
+according to the data received. This system can also be controlled by using the hand gestures, when user shows hand
+gesture in front of the camera the processing unit (Visual studio code) will start to recognize the figures and as per the
+fingers instruction processing unit will command the Arduino to do the process. The Blynk service is also provided
+additional to control the appliance. In case of any machine error Manual switches can also been used.
+5. SOFTWARE
+5.1 Unity Hub
+Unity is a cross-platform game engine which support a variety of desktop, mobile, console and virtual reality
+platforms. The engine may be used to create three-dimensional (3D) and two-dimensional (2D) AR visuals, as well as
+interactive simulations and different reports.
+5.2 Vuforia Engine
+Vuforia is an augmented reality software development kit (SDK) for mobile gadgets that helps to create the
+augmented reality applications. It uses computer technology to recognize and track 2D images and 3D objects in real time.
+5.3 Visual Studio Code
+Visual Studio Code is a source-code editor which consists of variety of programming languages, including Java,
+JavaScript, Go, Node.js, Python and C++. This platform is used to create an Artificial Intelligent projects. 
+ International Research Journal of Engineering and Technology (IRJET) e-ISSN: 2395-0056
+ Volume: 09 Issue: 01 | Jan 2022 www.irjet.net p-ISSN: 2395-0072
+© 2022, IRJET | Impact Factor value: 7.529 | ISO 9001:2008 Certified Journal | Page 642
+6. IMPLEMENTATION
+The outcome of this system is to build an AR virtual button interacts with the physical world which commands to switch
+ON and OFF the appliances which is connected through IOT and to control the appliance using AI based gesture control.
+This project can be operated in three ways one purely based on IOT where Blynk app used to control the appliances and
+on second AR part is integrated to the IOT part of the appliances to switch ON and OFF and on third method we can control
+the appliance using gesture movements. The AR part of the project is made possible by the UNITY Platform and Vuforia
+developer portal where an app is created to recognize the image target using mobile phone camera shows the virtual
+buttons. These virtual buttons are intractable in physical world, we need to place the finger on the virtual buttons which
+commands the microcontroller to switch the appliances ON and OFF. Another part is IOT part where the Blynk app is used
+to control the appliances directly. This flexibility of the project is distinct feature where the user can choose any three
+ways to switch the appliances. The proposed system is lower in cost, compact and ease of use so the implementation will
+be easy.
+Fig -3: ON/OFF using Blynk App Fig -4: ON/OFF using AR
+Fig -5: ON/OFF using AI 
+ International Research Journal of Engineering and Technology (IRJET) e-ISSN: 2395-0056
+ Volume: 09 Issue: 01 | Jan 2022 www.irjet.net p-ISSN: 2395-0072
+© 2022, IRJET | Impact Factor value: 7.529 | ISO 9001:2008 Certified Journal | Page 643
+7. CONCLUSION AND FUTURE POSIBILITY
+As AR (Augmented Reality) and AI (Artificial intelligence) is one of the driving forces of technology in future and will be
+applied every part of the technology that we use now, IOT is going to be the base of all technology because of the
+seamlessly connectivity between the appliances. Bringing the best out of both the technology into one project is a
+technological innovation. This project helps us to control the appliance in an easy way that it helps the physically
+challenged and elderly person. Not only helps the elderly and physically challenged, it can replace the normal switches
+helps to reduces the physical contact so that the spread of the disease can be reduced and decrease the chances of having a
+pandemic which are easily spread through the physical touch. This project improves the quality of life. It improves the
+efficiencies of IOT Technology due to interaction to the physical world through the virtual buttons. Switching is way faster
+than the normal mechanism of switch we use daily.
+A prototype was built and confirmed functional. This would help to assist people, especially the physically challenged
+people and elderly who cannot do their own work and need help from others for doing simple tasks such as controlling the
+electrical appliances in the home. The proposed idea is used to control particular home appliance by using any of the three
+(AR, AI & IoT) technology. In future we will be using four channel relays, temperature sensors and advanced processors.
+To control many appliances and to automatically switches the fans if the temperature raises. In future automation-based
+products will be produced in large numbers to reduce labor efficiency, to help physically challenged people and to save
+time.
+8. REFERENCES
+[1] H. K. Singh, S. Verma, S. Pal and K. Pandey, "A step towards Home Automation using IOT," 2019 Twelfth International
+Conference on Contemporary Computing (IC3), 2019, pp. 1-5, doi: 10.1109/IC3.2019.8844945.
+[2] H. Durani, M. Sheth, M. Vaghasia and S. Kotech, "Smart Automated Home Application using IoT with Blynk App," 2018
+Second International Conference on Inventive Communication and Computational Technologies (ICICCT), 2018, pp. 393-
+397, doi: 10.1109/ICICCT.2018.8473224.
+[3] A.Sugiura, M.Toyoura and X. Mao, "Clikable Virtual Button in Real Space," 2013 International Conference on
+Cyberworlds, 2013, pp. 384-384, doi: 10.1109/CW.2013.73.
+[4] S. Sureshkumar, C. P. Agash, S. Ramya, R. Kaviyaraj and S. Elanchezhiyan, "Augmented Reality with Internet of Things,"
+2021 International Conference on Artificial Intelligence and Smart Systems (ICAIS), 2021, pp. 1426-1430, doi:
+10.1109/ICAIS50930.2021.9395941.
+[5] C. Wu and C. H. Lin, "Depth-based hand gesture recognition for home appliance control," 2013 IEEE International
+Symposium on Consumer Electronics (ISCE), 2013, pp. 279-280, doi: 10.1109/ISCE.2013.6570227.
+[6] Minchev, Dimitar & Dimitrov, Atanas. (2018). “Home automation system based on ESP8266”. 1-4.
+10.1109/SIELA.2018.8447172.
